@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+   
+    <!-- Bootstrap  Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Hanum-18.com.id</title>
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+  </head>
+  <body id="home">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Hanum Fadiyanti</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current href="#About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" active aria-current href="#Portofolio">Portofolio</a>
+                <li class="nav-item">
+                  <a class="nav-link" active aria-current href="#Skill">Skill</a>
+              </li class="nav-item">
+              <a class="nav-link" aria-current href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+     <!-- Akhir Navbar -->
+
+     <!-- Awal Jumbotron -->
+
+     <section class="jumbotron text-center pt-6" >
+        <img src="IMG/WhatsApp Image 2023-09-08 at 09.46.36.jpg" alt="Ini foto saya"width="200" height="350">
+        <h2 class="display-4">Hanum Fadiyanti</h2>
+        <p class="lead">Saya adalah pelajar dari kelas XI PPLG 5</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1340 320">
+          <path fill="#ffffff" fill-opacity="10"
+            d="M0,224L26.7,240C53.3,256,107,288,160,272C213.3,256,267,192,320,181.3C373.3,171,427,213,480,213.3C533.3,213,587,171,640,181.3C693.3,192,747,256,800,256C853.3,256,907,192,960,165.3C1013.3,139,1067,149,1120,160C1173.3,171,1227,181,1280,186.7C1333.3,192,1387,192,1413,192L1440,192L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z">
+          </path>
+        </svg>
+      </section>
+      
+      <!-- Akhir Jumbotron -->
+
+      <!-- About -->
+      <section id="About">
+        <div class="container">
+          <div class="row text-center mb-4 pt-8">
+            <div class="col">
+              <h2>About me</h2>
+            </div>
+          </div>
+          <div class="row justify-content-center fs-5 text-justify">
+            <div class="col-md-8 mb-4">
+              <p>Perkenalkan nama saya Hanum Fadiyanti dari kelas XI PPLG 5 absen 18. Saya lahir di Banyumas, 20 Juni 2006. Saya bersekolah di SMK Telkom Purwokerto. Saya suka warna hitam dan biru. Hobi saya menonton film dan rebahan.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 245"><path fill="#95BDFF" fill-opacity="1" d="M0,96L30,96C60,96,120,96,180,90.7C240,85,300,75,360,69.3C420,64,480,64,540,90.7C600,117,660,171,720,192C780,213,840,203,900,192C960,181,1020,171,1080,186.7C1140,203,1200,245,1260,234.7C1320,224,1380,160,1410,128L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+      </section>
+      <!-- Akhir About -->
+
+      <!-- Awal Skill -->
+      <section id="Skill">
+        <div class="container">
+          <div class="row text-center text-center mb-4 pt-10">
+            <div class="col">
+              <h2>Skill</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div id="list-example" class="list-group">
+                <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-5">Item 5</a>
+              </div>
+            </div>
+            <div class="col-8">
+              <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                <h4 id="list-item-1">Item 1</h4>
+                <p>Membuat desain UI/UX menggunakan figma.</p>
+                <h4 id="list-item-2">Item 2</h4>
+                <p>Membuat arduino menggunakan thinkercad.</p>
+                <h4 id="list-item-3">Item 3</h4>
+                <p>Membuat logo dengan adobe illustrator.</p>
+                <h4 id="list-item-4">Item 4</h4>
+                <p>Menggunakan desain package menggunakan adobe photoshop</p>
+                <h4 id="list-item-4">Item 5</h4>
+                <p>Membuat website personal dengan HTML CSS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1340 170"><path fill="#95bdff" fill-opacity="1" d="M0,0L48,32C96,64,192,128,288,138.7C384,149,480,107,576,85.3C672,64,768,64,864,90.7C960,117,1056,171,1152,170.7C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>     
+        
+      </section>
+      
+     <!-- Akhir Skill-->
+
+      <!-- Project -->
+      <section id="Portofolio" style="background-color: #95BDFF;">
+        <div class="container">
+          <div class="row text-center text-center mb-4 pt-5">
+            <div class="col">
+              <h2>My Project</h2>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img src="IMG/Figma.png" alt="Portofolio1">
+                <div class="card-body">
+                  <p class="card-text">Project pertama yang saya lakukan yaitu mendesain aplikasi di Figma. Di figma saya membuat desain aplikasi marketplace.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img src="IMG/logo ai.png" alt="portofolio2">
+                <div class="card-body">
+                  <p class="card-text">Project kedua adalah membuaat logo untuk aplikasi yang sudah dirancang menggunakan Adobe Illustrator.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img src="IMG/arduino1.jpg" alt="portofolio3">
+                <div class="card-body">
+                  <p class="card-text">Project ketiga yaitu membuat arduino pemutar musik menggunakan Thinkercad.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img src="IMG/Screenshot 2022-12-09 075347.png" alt="portofolio4">
+                <div class="card-body">
+                  <p class="card-text">Project keempat yaitu membuat coding portofoilo HTML untuk pelajaran DPK-B.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img src="IMG/Pas.png" alt="portofolio5">
+                <div class="card-body">
+                  <p class="card-text">Project kelima yaitu membuat coding kalkulator untuk pas pelajaran DPK-A.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img src="IMG/Pas.png" alt="portofolio6">
+                <div class="card-body">
+                  <p class="card-text">Project kelima yaitu membuat coding kalkulator untuk pas pelajaran DPK-A.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L30,96C60,96,120,96,180,128C240,160,300,224,360,250.7C420,277,480,267,540,240C600,213,660,171,720,165.3C780,160,840,192,900,176C960,160,1020,96,1080,90.7C1140,85,1200,139,1260,154.7C1320,171,1380,149,1410,138.7L1440,128L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+      </section>
+      <!-- Akhir Portofolio -->
+
+      <!-- Contact -->
+      <section id="Contact" style="background-color: #95BDFF;" >
+        <div class="container">
+          <div class="row text-center mb-5 pt-6">
+            <div class="col">
+              <h2>Contact Me</h2>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                  Contact Me
+                </a>
+                <a href="mailto:541221109@student.smktelkom-pwt.sch.id"class="list-group-item list-group-item-action">Email</a>               
+                <a href="https://www.instagram.com/hanum_faddd/" class="list-group-item list-group-item-action">IG</a>
+                <a href="https://api.whatsapp.com/send?phone=6281227471258" class="list-group-item list-group-item-action">No.Phone</a>
+              </div>  
+           </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 285"><path fill="#0d6efd" fill-opacity="1" d="M0,128L26.7,133.3C53.3,139,107,149,160,138.7C213.3,128,267,96,320,117.3C373.3,139,427,213,480,229.3C533.3,245,587,203,640,170.7C693.3,139,747,117,800,133.3C853.3,149,907,203,960,202.7C1013.3,203,1067,149,1120,154.7C1173.3,160,1227,224,1280,245.3C1333.3,267,1387,245,1413,234.7L1440,224L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+      </section> 
+      <!-- Akhir Contact -->
+
+      <!-- Footer -->
+      <footer class="bg-primary text-white text-center pb-5">
+        <p>Created with <i class="bi bi-suit-heart-fill text-danger"></i> by <a href="https://www.instagram.com/hanum_faddd/" class="text-white fw-bold">Hanum Fadiyanti</a></p>
+      </footer>
+      <!-- Akhir Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+  
+</html>
